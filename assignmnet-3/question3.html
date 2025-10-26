@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Course Registration Form Structure</title>
+</head>
+<body>
+  <header>
+    <h1>Course Registration</h1>
+  </header>
+  <main>
+    <form>
+      <fieldset>
+        <legend>Student Information</legend>
+        <p>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" placeholder="Your full name">
+        </p>
+        <p>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" placeholder="you@example.com">
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Course Selection</legend>
+        <p>
+          <label for="course">Choose a course:</label><br>
+          <select id="course" name="course">
+            <option value="cs101" selected>CS101 - Introduction to Programming</option>
+            <option value="web">Web Development</option>
+            <option value="ds">Data Structures</option>
+          </select>
+        </p>
+      </fieldset>
+
+      <p><input type="submit" value="Register"></p>
+    </form>
+
+    <h2>Available Schedules</h2>
+    <table border="1" cellpadding="4" cellspacing="0" title="Course schedules">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Time</th>
+          <th>Instructor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>10:00 - 12:00</td>
+          <td>Dr. Sharma</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>14:00 - 16:00</td>
+          <td>Ms. Gupta</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>© 2025 Course Registration</p>
+  </footer>
+</body>
+</html>
